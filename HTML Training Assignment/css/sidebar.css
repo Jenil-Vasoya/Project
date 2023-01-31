@@ -10,12 +10,16 @@
 
   margin-right: 20px;
   border: none;
-  background: #084cdf;
+  background: #eb3333;
   padding: 10px 20px;
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
   transition: background .2s ease-in-out;
+}
+
+.t1{
+  color: black;
 }
 
 .sidebar {
