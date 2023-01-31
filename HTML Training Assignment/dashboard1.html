@@ -24,13 +24,18 @@
     </style>
 </head>
 
-<body style="background-color: #FAFAFA;">
+<body style="background-color: #fafafa;">
 
 
     <nav class="navbar navbar-expand-lg " style="background-color: white;">
         <div class="container-fluid">
 
-            <a href="#"><img src="./images/menu-bar.svg" class="me-2"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+
+            </button>
 
 
             <img src="./images/header-logo.svg">
@@ -63,9 +68,9 @@
                         </a>
 
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                            <li><a class="dropdown-item" href="#">Action 1</a></li>
-                            <li><a class="dropdown-item" href="#">Action 2 </a></li>
-                            <li><a class="dropdown-item" href="#">Action 3 </a></li>
+                            <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="index1.html">Log Out</a></li>
                         </ul>
                     </div>
 
@@ -75,51 +80,53 @@
     </nav>
 
 
-    <div class="row container-fluid">
-        <div class="col-lg-2 d-none d-lg-block d-xl-block d-xxl-block ">
+    <div class="row container-fluid"   style="margin: 0px;" >
+        <div id="sidebarMenu"class="col-lg-2 d-lg-block d-xl-block d-xxl-block ">
+            <nav class=" d-lg-block bg-white my-auto">
                 <div class="position-sticky">
-                                <div class="sidebar"> 
-        
-                                 <a href="#element1">  
-                                    <img src="images\dashboard-default.svg" alt="non" style="top: 119px;
-                                    left: 48px;
-                                    width: 15px;
-                                    height: 15px;"> Deshboard</a>
-                              
-                                 <a href="#element2"> <img src="images\graph-default.svg" alt="non" style="top: 119px;
-                                    left: 48px;
-                                    width: 15px;
-                                    height: 15px;"> Analysis</a>
-                                 
-                                 <a href="#element3"> <img src="images\inbox-default.svg" alt="non" style="top: 171px;
-                                    left: 46px;
-                                    width: 19px;
-                                    height: 18px;"> Inbox</a>
-                              
-                                 <a href="#element4">
-                                    <img src="images\graph-default.svg" alt="non" style="top: 119px;
-                                    left: 48px;
-                                    width: 15px;
-                                    height: 15px;"> History</a>
-                                 <a href="#element5"><img src="images\user-default.svg" alt="non" style="top:339px;
-                                    left: 49px;
-                                    width: 15px;
-                                    height: 15px;"> Users</a>
-                              
-                                 <a href="#element6"> <img src="images\maintenance-default.svg" alt="non" style="top: 119px;
-                                    left: 48px;
-                                    width: 15px;
-                                    height: 15px;"> Maintainance</a>
-                                 <a href="#element7"> <img src="images\setting-default.svg" alt="non" style="top: 436px;
-                                    left: 47px;
-                                    width: 17px;
-                                    height: 17px;"> Setting</a>
-                                </div>
+                    <div class="sidebar">
+
+                        <a href="#element1">
+                            <img src="images\dashboard-default.svg" alt="non" style="top: 119px;
+                           left: 48px;
+                           width: 15px;
+                           height: 15px;"> Dashboard</a>
+
+                        <a href="analysis1.html"> <img src="images\graph-default.svg" alt="non" style="top: 119px;
+                           left: 48px;
+                           width: 15px;
+                           height: 15px;"> Analysis</a>
+
+                        <a href="#element3"> <img src="images\inbox-default.svg" alt="non" style="top: 171px;
+                           left: 46px;
+                           width: 19px;
+                           height: 18px;"> Inbox</a>
+
+                        <a href="#element4">
+                            <img src="images\graph-default.svg" alt="non" style="top: 119px;
+                           left: 48px;
+                           width: 15px;
+                           height: 15px;"> History</a>
+                        <a href="#element5"><img src="images\user-default.svg" alt="non" style="top:339px;
+                           left: 49px;
+                           width: 15px;
+                           height: 15px;"> Users</a>
+
+                        <a href="#element6"> <img src="images\maintenance-default.svg" alt="non" style="top: 119px;
+                           left: 48px;
+                           width: 15px;
+                           height: 15px;"> Maintainance</a>
+                        <a href="#element7"> <img src="images\setting-default.svg" alt="non" style="top: 436px;
+                           left: 47px;
+                           width: 17px;
+                           height: 17px;"> Setting</a>
+                    </div>
                 </div>
+            </nav>
             <!-- Sidebar -->
         </div>
 
-        <div class="col-lg-10 px-">
+        <div class="col-lg-10 px-5">
             <h2 class="my-5 ms-3">Dashboard</h2>
             <div class="row">
                 <div class="col-lg-2 col-md-6 col-sm-12 mb-2 ">
@@ -149,7 +156,8 @@
                 <div class="col-lg-2 col-md-6 col-sm-12 mb-2 ms-auto">
                     <div class="card border-0">
                         <div class=" row card-body">
-                            <div class="col-3"><img src="images/total-product.svg" class="py-4 ps-3" style="width:90px; height:90px;"></div>
+                            <div class="col-3"><img src="images/total-product.svg" class="py-4 ps-3"
+                                    style="width:90px; height:90px;"></div>
                             <div class="col-9 py-4">
                                 <h5 class="card-title" style="text-align: center;">32,456</h5>
                                 <p class="card-text " style="text-align: center;">Total Products</p>
@@ -170,7 +178,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6 col-sm-12 mb-2 mx-auto">
+                <div class="col-lg-2 col-md-6 col-sm-12 mb-2 ms-auto">
                     <div class="card border-0">
                         <div class=" row card-body">
                             <div class="col-3"><img src="images/money-bag.svg" class="py-4 ps-3"></div>
@@ -219,14 +227,11 @@
                                 <span class="dot" style="height: 18px; width: 18px;"></span>
                             </div>
                         </div>
-                        <div class="col-md-">
-                            <i class="bi bi-circle-fill me-1" style="color: #EBC844;"></i><span  style=" font-size: 14px;">India</span>
-                            <i class="bi bi-circle-fill me-1" style="color: #A2B86C;"></i><span  style=" font-size: 14px;">Canada</span>
-                            <i class="bi bi-circle-fill me-1" style="color: #F16C20;"></i><span  style=" font-size: 14px;">Russia</span>
-                        </div>
-                        <div class="col-md-9"><i class="bi bi-circle-fill me-1" style="color: #C8242F;"></i><span  style=" font-size: 14px;">United States
-                            of America</span></div>
-                        
+                        <div class="col-8"><i class="bi bi-circle-fill me-1" style="color: #C8242F;"></i>United States
+                            of America</div>
+                        <div class="col-4"><i class="bi bi-circle-fill me-1" style="color: #A2B86C;"></i>Canada</div>
+                        <div class="col-8"><i class="bi bi-circle-fill me-1" style="color: #F16C20;"></i>Russia</div>
+                        <div class="col-4"><i class="bi bi-circle-fill me-1" style="color: #EBC844;"></i>India</div>
 
                     </div>
                 </div>

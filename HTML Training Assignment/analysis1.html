@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #fafafa;">
+
+    <!---------------------------------------------------------------- Navbar -->
+    <nav class="navbar navbar-expand-lg " style="background-color: white;">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+
+            </button>
+
+
+            <img src="./images/header-logo.svg">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <form class="d-flex ms-3" role="search">
+                        <i class="bi bi-search my-auto"></i>
+                        <input class="form-control me-2 ms-3 border-0 " style="width: 60vw; background-color: white;"
+                            type="search" placeholder="Search" aria-label="Search">
+
+                    </form>
+                </ul>
+                <div class="d-flex">
+                    <i class="bi bi-bell my-auto"></i>
+                    <img src="./images/profile.png" class="ms-3">
+
+
+                    <div class="dropdown-center my-auto">
+                        <a class="nav-link dropdown-toggle  ms-3 me-5" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            John Doe
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="index1.html">Log Out</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---------------------------------------------------------- Sidebar -->
+    <div class="row container-fluid"   style="margin: 0px;">
+        <div id="sidebarMenu"class="col-lg-2 d-lg-block d-xl-block d-xxl-block ">
+            <nav class=" d-lg-block bg-white my-auto">
+                <div class="position-sticky">
+                    <div class="sidebar">
+
+                        <a href="dashboard1.html">
+                            <img src="images\dashboard-default.svg" alt="non" style="top: 119px;
+                           left: 48px;
+                           width: 15px;
+                           height: 15px;"> Dashboard</a>
+
+                        <a href="#element2"> <img src="images\graph-default.svg" alt="non" style="top: 119px;
+                           left: 48px;
+                           width: 15px;
+                           height: 15px;"> Analysis</a>
+
+                        <a href="#element3"> <img src="images\inbox-default.svg" alt="non" style="top: 171px;
+                           left: 46px;
+                           width: 19px;
+                           height: 18px;"> Inbox</a>
+
+                        <a href="#element4">
+                            <img src="images\graph-default.svg" alt="non" style="top: 119px;
+                           left: 48px;
+                           width: 15px;
+                           height: 15px;"> History</a>
+                        <a href="#element5"><img src="images\user-default.svg" alt="non" style="top:339px;
+                           left: 49px;
+                           width: 15px;
+                           height: 15px;"> Users</a>
+
+                        <a href="#element6"> <img src="images\maintenance-default.svg" alt="non" style="top: 119px;
+                           left: 48px;
+                           width: 15px;
+                           height: 15px;"> Maintainance</a>
+                        <a href="#element7"> <img src="images\setting-default.svg" alt="non" style="top: 436px;
+                           left: 47px;
+                           width: 17px;
+                           height: 17px;"> Setting</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!----------------------------------------------------- Form -->
+
+
+        <div class="col-lg-10 px-5">
+            <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <h4><b>Analysis</b></h4><br>
+                <div class="form-outline mb-4">
+                    <h4>One column</h4>
+                    <input type="text" id="form6Example3" class="form-control" / placeholder="Name">
+
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Dropdown</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <br>
+                <div class="form-outline mb-4">
+                    <textarea class="form-control" id="form6Example7" rows="4" placeholder="Multiple line"></textarea>
+
+                </div>
+                <h4>Two column</h4>
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline">
+
+                            <input type="text" id="form6Example1" class="form-control" / placeholder="Name">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input type="text" id="form6Example2" class="form-control" / placeholder="Username">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline">
+
+                            <input type="password" id="form6Example1" class="form-control" placeholder="Password">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Dropdown</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-4 mt-2">
+                        <div class="form-outline">
+
+                            <input type="text" id="form6Example1" class="form-control" checked placeholder="Focus">
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-2">
+                        <div class="form-outline">
+
+                            <input type="password" id="form6Example1" class="form-control" / placeholder="Password">
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-2">
+                        <div class="form-outline">
+
+                            <input type="text" id="form6Example1" class="form-control" disabled placeholder="Johndoe">
+
+                        </div>
+                    </div>
+                </div>
+                <h4>Four column</h4>
+                <div class="row mb-4">
+                    <div class="col-md-3 mt-2">
+                        <div class="form-outline">
+
+                            <input type="text" id="form6Example1" class="form-control is-invalid" /
+                                placeholder="Designation">
+                            <div class="invalid-feedback">
+                                Enter valid data
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+
+                        <div class="form-outline">
+
+                            <input type="text" id="form6Example1" class="form-control" / placeholder="Name">
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 mt-2">
+
+                        <div class="form-outline">
+
+                            <input type="text" id="form6Example1" class="form-control" / placeholder="UserName">
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <div class="form-outline">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Dropdown</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div><br>
+                <h4>Other Design Elements</h4><br>
+                <h5>File upload</h5>
+                <div class="custom-file">
+                    <input type="file" class="input custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile"></label>
+                </div><br>
+                <h5>Radio Button</h5>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" checked> Option 1
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio"> Option 2
+                </label><br><br>
+                <h5>Checkbox</h5>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value=""> Option 1
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value=""> Option 2
+                </label><br><br>
+                <h5>Snackbar</h5>
+                <div class="snackBar">
+                    <div class="row" style="padding: 10px;">
+                        <div class="squareBox  mt-2 border-danger text-danger col-md-5 col-sm-5 col-10"
+                            style="border: 1px solid red; border-radius: 5px; margin-right: 20px;">
+                            <img src="images/error-icon.svg" width="20px" height="20px" alt=""><span
+                                class="message text-error"> This is an
+                                error message!</span>
+                        </div>
+                        <div class="right squareBox mt-2 border-primary text-primary col-md-5 col-sm-5 col-10"
+                            style="border: 1px solid blue; border-radius: 5px;">
+                            <img src="images/info-icon.svg" width="20px" height="20px" alt=""><span class="message">
+                                This is an information
+                                message!</span>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 10px; padding-right: 10px;">
+                        <div class="squareBox mt-2 border-warning text-warning col-md-5 col-sm-5 col-10"
+                            style="border: 1px solid yellow; border-radius: 5px; margin-right: 20px;">
+                            <img src="images/warning-icon.svg" width="20px" height="20px" alt=""><span class="message">
+                                This is a warning
+                                message!</span>
+                        </div>
+                        <div class="right squareBox mt-2 border-success text-success col-md-5 col-sm-5 col-10"
+                            style="border: 1px solid green; border-radius: 5px;">
+                            <img src="images/success-icon.svg" width="20px" height="20px" alt=""><span class="message">
+                                This is a Success
+                                message!</span>
+                        </div>
+                    </div>
+                </div><br>
+                <h5>Call to Action</h5>
+                <div>
+                    <button type="button" class="btn btn-danger rounded-pill">Primary</button>
+                    <button type="button" class="btn btn-outline-danger rounded-pill">Secondary</button>
+                </div><br>
+                <h5>Tabs</h5>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Tab 1</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tab 2</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Tab 3</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsum ratione quae! Earum,
+                        atque quidem! Suscipit architecto, itaque, quae quia quaerat eligendi blanditiis sequi tempore
+                        veritatis aliquid id voluptates unde inventore alias dolorum et modi, fuga vitae possimus. Quam
+                        recusandae commodi error corporis voluptatem architecto, a placeat eveniet neque? Sequi!</div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam, voluptatem alias
+                        doloribus ea voluptate libero eos fugit nemo cum quidem dolorum nam eaque reiciendis, cupiditate
+                        pariatur laudantium optio, molestiae reprehenderit hic! Hic, beatae cumque harum excepturi rem,
+                        animi minima eius porro sequi doloremque incidunt distinctio enim ipsam quis in.</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit. Ratione sed animi, necessitatibus quod
+                        temporibus a veniam cumque nulla molestias! Beatae assumenda, non laboriosam consequuntur ullam
+                        aliquid dolor necessitatibus cupiditate ad libero atque deleniti soluta voluptates est similique
+                        nisi quam. Earum nobis reiciendis quisquam perspiciatis aperiam maxime. Eum rem nulla vero!
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
